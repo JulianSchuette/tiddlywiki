@@ -10539,7 +10539,7 @@ if(!version.extensions.IntelliTaggerPlugin){if(!window.abego){window.abego={};}i
 // %/
 </pre>
 </div>
-<div title="IntelliTaggerStyleSheet" modifier="Julian" created="201203190813" modified="201203190815" alias="">
+<div title="IntelliTaggerStyleSheet" modifier="YourName" created="201203190813" modified="201405180925" alias="" changecount="1">
 <pre>/***
 !~IntelliTagger Stylesheet
 ***/
@@ -10550,10 +10550,9 @@ if(!version.extensions.IntelliTaggerPlugin){if(!window.abego){window.abego={};}i
 
 	padding: 2px;
 	list-style: none;
-	margin: 0;
+	margin: 2px;
 
-	background: #eeeeee;
-	border: 1px solid DarkGray;
+	background: [[ColorPalette::CodeBackground]];
 }
 
 .intelliTaggerSuggestions .currentTag   {
@@ -10561,7 +10560,7 @@ if(!version.extensions.IntelliTaggerPlugin){if(!window.abego){window.abego={};}i
 }
 
 .intelliTaggerSuggestions .suggestionNumber {
-	color: #808080;
+	color: [[ColorPalette::TiddlerBackground]];
 }
 
 .intelliTaggerSuggestions .numberedSuggestion{
@@ -10578,7 +10577,7 @@ if(!version.extensions.IntelliTaggerPlugin){if(!window.abego){window.abego={};}i
 	border-bottom-width: thin;
 	border-bottom-style: solid;
 	border-bottom-color: #999999;
-	padding-bottom: 2px;
+	padding-bottom: 3px;
 }
 
 .intelliTaggerSuggestions .normalTags {
@@ -10592,10 +10591,14 @@ if(!version.extensions.IntelliTaggerPlugin){if(!window.abego){window.abego={};}i
 }
 
 .intelliTaggerSuggestions .button {
--moz-border-radius:3px;
-	-webkit-border-radius:2px;
-	border-radius:3px;
-	border:1px solid #dcdcdc;
+        -moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+        padding:1px;
+        border: 0px none;
+}
+.intelliTaggerSuggestions .button:hover {
+        background-color: [[ColorPalette::TiddlerBackground]];
 }
 
 /*}}}*/
